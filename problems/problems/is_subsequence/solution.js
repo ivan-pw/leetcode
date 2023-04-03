@@ -10,7 +10,6 @@ let isSubsequence = function (s, t) {
     if (s[ss] === t[i]) {
       ss++;
     }
-
   }
 
   return ss === s.length;
