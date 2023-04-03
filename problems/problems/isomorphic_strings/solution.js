@@ -4,13 +4,10 @@
  * @return {boolean}
  */
 const isIsomorphic = function (s, t) {
-  const l = s.length;
   const tab1 = {};
   const tab2 = {};
 
-  for (let i = 0; i < l; i++) {
-    // console.log('tab1: ', tab1);
-    // console.log('tab2: ', tab2);
+  for (let i = 0; i < s.length; i++) {
     if (!tab1[s[i]] && !tab2[t[i]]) {
       tab1[s[i]] = t[i];
       tab2[t[i]] = s[i];
